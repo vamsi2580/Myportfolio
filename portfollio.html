@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            
+            font-family: Arial, Helvetica, sans-serif
+        }
+     body{
+        font-size: 20px;
+        margin: 0;
+     }
+     label{
+        font-weight: bold;
+    }
+    
+    .form2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        height: 80%;
+        width: 30%;
+        border-radius: 10px;
+        background-color: aliceblue;
+    }
+    div h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+    }
+    input{
+        border: none;
+        outline: none;
+        background-color: aliceblue;
+        margin-top: 5px;
+    }
+    hr{
+        
+        margin: 5px;
+        margin-left: 3px;
+    }
+    .button{margin-top: 10px;
+       border: none;
+       color: rgb(0, 0, 0);
+       background-color: rgb(0, 255, 38);
+       padding: 7px;
+       border-radius: 7px;
+       margin-left: 10px;
+       
+    }
+    .button-group {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    textarea{
+        outline: none;
+        border: none;
+    }
+    header{
+        height: 100vh;
+        width: 100vw;
+        background-color: #2196f3;
+        margin: 0;
+        color: whitesmoke;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header h1{
+        text-align: center;
+        color: whitesmoke;
+    
+    }
+   .first{
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 140px;
+    
+   }
+   .first:hover{
+        color: black;
+        border-color: rgb(183, 0, 255);
+        cursor: pointer;
+        background-color: aliceblue;
+   }
+   img{
+    height: 300px;
+   }
+   
+   section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    height: 100vh;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    border-radius: 20px;
+   }
+   main{
+    padding: 20px;
+    padding-top: 40px;
+   }
+   h1{
+     color: #2196F3;
+     font-size: 50px;
+   }
+   footer{
+    background-color: black;
+    color: white;
+    height: 130px;
+   }
+   .top{
+    background-color: #2196F3;
+    color: white;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 50%;
+   }
+   .top:hover{
+    background-color: black;
+    color: red;
+   }
+   p{
+    padding-left: 10%;
+    padding-top: 3.5%;
+   }
+   .container{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60vw;
+   }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <h1> Welcome To My Portfolio</h1>
+          <div class="container">
+         <a href="#about"><button class="first">About</button></a>
+         <a href="#skills"><button class="first">Skills</button></a>
+         <a href="#contact"> <button class="first">Contact</button></a>
+          </div>
+        
+    
+    </header>
+<main>
+   <section id="about">
+    <h1>
+        Vamsi Krishna
+    </h1>
+   
+    <img src="photo.jpg" alt="photo">
+    <p>
+        I'm passionated web developer with focus on web technologies<br> 
+        <br>I'm currently pursuing my B.Tech in Saveetha school of Engineering <br>
+        <br>I have learnt Web development from Mentiby
+    </p>
+   </section>
+   <section id="skills">
+    <h1>
+        My skills
+    </h1>
+    <ol>
+        <li>Skill 1</li>
+        <li>Skill 2</li>
+        <li>Skill 3</li>
+    </ol>
+</section>
+   <section id="contact">
+    
+    <div class="form2">
+        <h1>Say Hello!</h1>
+        <form>
+        <div class="form-group">
+            <label for="Name">Your Name</label>
+            <input type="text" placeholder="Enter your name" id="Name" name="Name">
+            <hr>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your Email" id="email" name="Name">
+            <hr>
+            <br>
+            <label for="number">Mobile number</label>
+            <input type="number" placeholder="Enter your Mobile number" id="number" name="Name">
+            <hr>
+            <br>
+            <label for="gender">Gender</label>
+            <label>
+              <input type="radio" name="gender" value="station1">Male
+          </label>
+          <label>
+              <input type="radio" name="gender" value="station1">Female
+          </label>
+          <hr>
+            <br>
+            <label for="Textme">Text me</label><br>
+            <textarea id="Textme" placeholder="Message"></textarea>
+            <hr>
+            <div class="button-group">
+            <button class="button" type="submit"> Submit </button>
+              <button class="button" type="reset" style="background-color: red; color: rgb(255, 255, 255);"> Reset </button>
+              </div>
+        </div>
+          </form>
+        </div>
+    </section>
+</main><a href="#top"><button class="top">
+    Top
+</button></a>
+
+<footer><div>
+    <p>@2024 My Portfolio</p>
+    </div>
+</footer>
+</body>
+</html>
